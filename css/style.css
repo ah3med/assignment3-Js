@@ -1,0 +1,99 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    background-color: #f7ecde;
+    color: #352e28;
+ 
+}
+.home{
+    min-height: 100vh;
+}
+
+.home h1{ 
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: #352e28; 
+    isolation: isolate;
+    position: relative;
+ 
+}
+.home h1::before{ 
+content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 0.4s;
+  z-index: -1;
+}
+
+.home h1:hover::before{
+    height: 50%;
+}
+
+.bookdot {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+   border-bottom: 2px dotted #352e28;
+   border-top: 0px dotted #352e28;
+  }
+  .bookdot-contact h2 {
+    font-family: 'Righteous', sans-serif;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+  }
+.btn-submit{
+    background-color: #d1512d;
+    color: #fff;
+    width: 150px;
+    font-size: 15px;
+}
+.btn-submit:hover{
+    background-color:#a03315;
+    color: #fff;
+}
+.bookdot-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+   border-bottom: 2px dotted #352e28;
+   border-top: 0px dotted #352e28;
+  }
+
+  .btn-visit{
+    background-color: #9eb23b;
+    font-size: 1rem;
+    color: #fff;
+} 
+  .btn-delete{
+    background-color: #eb1d36;
+    font-size: 1rem;
+    color: #fff;
+} 
+  .btn-delete:hover{
+    background-color: #ba081d;
+    font-size: 1rem;
+    color: #fff;
+} 
+  .btn-visit:hover{
+    background-color: #6e8018;
+    color: #fff;  
+} 
+

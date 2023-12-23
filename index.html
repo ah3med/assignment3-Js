@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BookMark</title>
+</head>
+<body>
+   <section>
+        <div class="container">
+          <div class="home">
+            <div class="home-title d-flex justify-content-center">
+                <h1 class="mt-5">Bookmarker</h1>
+            </div>
+            <div class="bookdot w-100 d-flex justify-content-center align-items-center gap-4">
+            </div>
+            <div class="bookdot-contact w-100 d-flex justify-content-center align-items-center">
+                <h2>
+                    <i class="fa-solid fa-bookmark fa-sm"></i>
+                      Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark fa-sm"></i>
+                </h2>
+            </div>
+            <div class="w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkName" class="pb-2 fw-semibold ">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    <span>Site Name</span>
+                </label>
+                <input type="text" oninput="validateSite(this.value)" id="bookmarkName" placeholder="Bookmark Name" class="form-control">
+                <label for="bookmarkURL" class="pb-2 fw-semibold pt-3">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    <span>Site URL</span>
+                </label>
+                <input type="url" oninput="validateUrl(this.value)" id="bookmarkURL" placeholder="Website URL" class="form-control">
+              </div>
+              <div class="div d-flex justify-content-center mt-3">
+                <button class="btn btn-submit" onclick="addSite()">Submit</button>
+              </div>
+
+              <div class="bookdot-form  w-100 d-flex justify-content-center align-items-center gap-4">
+            </div>
+
+            <div class="w-100 mx-auto p-3">
+                <input oninput="searchProducts(this.value)" type="text" id="searchInput" placeholder="Search By WebSite Name" class="form-control">
+            </div>
+              <!-- ////////////////////////////////////////////////////// -->
+              <div>
+
+                <table class="table mt-4 text-center bg-light">
+                    <thead>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="tbody">
+                  
+                    </tbody>
+                </table>
+             </div>
+          </div>
+           
+         </div>
+   </section>
+
+   <script src="css/bootstrap.bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
